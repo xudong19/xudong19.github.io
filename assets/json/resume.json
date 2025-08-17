@@ -3,7 +3,7 @@
     "name": "Joe Dong",
     "label": "Builder and Entrepreneur",
     "image": "",
-    "email": "dongxu10@gmail.com",
+    "email": "joedong42@gmail.com",
     "url": "https://joedong.ai/",
     "summary": "",
     "profiles": [
@@ -28,11 +28,19 @@
   "education": [
     {
       "institution": "Virginia Tech",
-      "location": "Blacksburg, VA",
+      "location": "Blacksburg, VA, USA",
       "url": "https://www.vt.edu/",
       "studyType": "PhD",
       "startDate": "2014-08-15",
       "endDate": "2019-05-15"
+    },
+    {
+      "institution": "University of Science and Technology of China",
+      "location": "Hefei, Anhui, China",
+      "url": "https://en.ustc.edu.cn/",
+      "studyType": "BSc",
+      "startDate": "2010-09-01",
+      "endDate": "2014-06-30"
     }
   ]
 }
