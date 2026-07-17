@@ -59,7 +59,7 @@ h1,h2,h3,p,ul,figure,blockquote{ margin:0 }
   background-size:cover; background-position:center; background-repeat:no-repeat;
   border:1px solid var(--hair); border-radius:3px; position:relative; overflow:hidden;
 }
-.portrait{ aspect-ratio:4/5 }
+.portrait{ aspect-ratio:4/5; background-position:72% center }
 figcaption{
   position:absolute; left:0; right:0; bottom:0; padding:8px 10px;
   font-family:var(--mono); font-size:10.5px; color:var(--muted);
