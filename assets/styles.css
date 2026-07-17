@@ -1,0 +1,152 @@
+/* Xu "Joe" Dong — joedong.ai
+   Bespoke static. One accent, cool paper, calm editorial. See joe-dong-website-plan-v3.md §6/§10. */
+
+:root{
+  --paper:#FAFAF7; --ink:#18181B; --muted:#5A5A63; --hair:#E5E4DE;
+  --accent:#2F44C7;              /* deep blue-indigo, kept blue to avoid "AI purple" */
+  --figbg:#F1F0EA;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --maxw:760px;
+}
+:root[data-theme="dark"]{
+  --paper:#141416; --ink:#ECECEE; --muted:#9A9AA3; --hair:#2A2A2E;
+  --accent:#7C8CFF;              /* nudged bluer than the review's first pass */
+  --figbg:#1E1E22;
+}
+
+*{box-sizing:border-box}
+html{ -webkit-text-size-adjust:100% }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+a{ color:var(--accent); text-decoration:none }
+a:hover{ text-decoration:underline; text-underline-offset:3px }
+a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:2px }
+img{ max-width:100%; display:block }
+h1,h2,h3,p,ul,figure,blockquote{ margin:0 }
+
+.wrap{ max-width:var(--maxw); margin:0 auto; padding:0 28px }
+
+/* top bar */
+.topbar{ display:flex; justify-content:space-between; align-items:center; padding:18px 28px }
+.brand{ font-family:var(--mono); font-size:12px; letter-spacing:.02em; color:var(--muted) }
+.brand:hover{ text-decoration:none }
+.brand .dot{ color:var(--accent) }
+.toggle{
+  font-family:var(--mono); font-size:12px; color:var(--muted); cursor:pointer;
+  background:none; border:1px solid var(--hair); border-radius:999px; padding:6px 12px; min-height:32px;
+}
+.toggle:hover{ color:var(--ink); border-color:var(--muted) }
+
+/* hero */
+.hero{ padding:34px 0 8px; display:grid; grid-template-columns:1fr 210px; gap:36px; align-items:start }
+.name{ font-family:var(--serif); font-weight:600; font-size:40px; line-height:1.03; letter-spacing:-.015em; margin-bottom:10px }
+.name .zh{ color:var(--muted); font-weight:400; white-space:nowrap }
+.thesis{ font-family:var(--serif); font-style:italic; font-weight:400; font-size:23px; line-height:1.3; color:var(--muted); margin:8px 0 14px }
+.subline{ font-size:16px; color:var(--muted); max-width:54ch; margin-bottom:18px }
+.subline b{ color:var(--ink); font-weight:600 }
+.links{ font-family:var(--mono); font-size:13px; line-height:1.4 }
+.links a{ color:var(--ink); padding:7px 0; display:inline-block }   /* taller hit target */
+.links .sep{ color:var(--hair); margin:0 6px }
+
+/* framed media: background-image with a clean captioned placeholder when the asset is missing */
+.portrait, .fig, .thumb{
+  background-color:var(--figbg); background-image:var(--img,none);
+  background-size:cover; background-position:center; background-repeat:no-repeat;
+  border:1px solid var(--hair); border-radius:3px; position:relative; overflow:hidden;
+}
+.portrait{ aspect-ratio:4/5 }
+figcaption{
+  position:absolute; left:0; right:0; bottom:0; padding:8px 10px;
+  font-family:var(--mono); font-size:10.5px; color:var(--muted);
+  background:linear-gradient(transparent, color-mix(in srgb, var(--figbg) 88%, transparent));
+}
+
+/* credibility strip */
+.strip{
+  display:flex; gap:22px; flex-wrap:wrap; margin-top:26px; padding:14px 0;
+  border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);
+  font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* sections */
+section:not(.strip){ padding:40px 0; border-bottom:1px solid var(--hair) }
+.eyebrow{ font-family:var(--mono); font-size:11.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin-bottom:14px }
+h2{ font-family:var(--serif); font-weight:500; font-size:26px; line-height:1.15; letter-spacing:-.01em; margin-bottom:8px }
+.lead{ color:var(--muted); font-size:16px; max-width:60ch; margin-bottom:22px }
+
+/* building figures: one lead + one secondary (heights matched on wide screens) */
+.fig-row{ display:grid; grid-template-columns:1.5fr 1fr; gap:18px; margin-bottom:12px }
+.fig{ aspect-ratio:16/10 }
+.work-links{ font-family:var(--mono); font-size:12.5px; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 18px }
+.work-links a{ color:var(--ink) }
+
+/* publications (Barron grammar) */
+.pub{ display:grid; grid-template-columns:120px 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--hair) }
+.pub:first-of-type{ border-top:none }
+.thumb{ aspect-ratio:4/3 }
+.pub .t{ font-family:var(--sans); font-weight:600; font-size:15px; line-height:1.35; margin-bottom:3px }
+.pub .a{ font-size:14px; color:var(--muted); margin-bottom:3px }
+.pub .a b{ color:var(--ink) }
+.pub .v{ font-family:var(--mono); font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted) }
+.pub .v .venue{ color:var(--accent) }
+.pub .dl{ font-family:var(--mono); font-size:12px; margin-top:5px }
+.seeall{ font-family:var(--mono); font-size:12.5px; margin-top:16px }
+
+/* writing */
+.essays{ list-style:none; padding:0 }
+.essay{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; padding:13px 0; border-top:1px solid var(--hair) }
+.essay:first-child{ border-top:none }
+.essay .et{ font-weight:500; font-size:16px; color:var(--ink) }
+.essay .ed{ font-family:var(--mono); font-size:11.5px; color:var(--muted); white-space:nowrap }
+.quote{ font-family:var(--serif); font-style:italic; font-size:20px; line-height:1.4; color:var(--ink); border-left:2px solid var(--accent); padding-left:18px; margin:24px 0 6px; max-width:56ch }
+.subscribe{ display:inline-block; font-family:var(--mono); font-size:12.5px; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:8px 16px; margin-top:18px; min-height:38px }
+.subscribe:hover{ text-decoration:none; background:color-mix(in srgb, var(--accent) 10%, transparent) }
+
+/* about */
+.about p{ max-width:64ch; margin-bottom:14px }
+.about .labels{ font-family:var(--mono); font-size:13px; color:var(--muted); line-height:1.8 }
+.about .labels b{ color:var(--accent); font-weight:500 }
+
+/* footer */
+footer{ padding:34px 28px 56px }
+.chan{ font-family:var(--mono); font-size:13px; display:flex; flex-wrap:wrap; align-items:center }
+.chan a{ color:var(--ink); padding:7px 0; display:inline-block }
+.chan .sep{ color:var(--hair); margin:0 9px }
+.zh-row{ font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:8px }
+.zh-row a{ color:var(--muted) }
+.colophon{ font-family:var(--mono); font-size:11px; color:var(--muted); margin-top:22px }
+
+/* reveal on scroll — progressive enhancement only (content is visible without JS) */
+.js .reveal{ opacity:0; transform:translateY(10px); transition:opacity .18s ease, transform .18s ease }
+.js .reveal.in{ opacity:1; transform:none }
+
+/* two-column building figures: match heights on wide screens; mobile stack keeps 16/10 */
+@media (min-width:641px){
+  .fig-row{ align-items:stretch }
+  .fig-row .fig:not(.fig-lead){ aspect-ratio:auto; height:100% }
+}
+
+@media (max-width:640px){
+  .hero{ grid-template-columns:1fr; gap:20px }
+  .portrait{ max-width:200px }
+  .name{ font-size:32px }
+  .thesis{ font-size:20px }
+  .fig-row{ grid-template-columns:1fr; gap:14px }
+  .pub{ grid-template-columns:66px 1fr; gap:12px }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; scroll-behavior:auto !important }
+  .js .reveal{ opacity:1; transform:none }
+}
+
+/* Safety: never let reveal hide content when printing or when JS/IO doesn't run its course. */
+@media print{
+  .js .reveal{ opacity:1 !important; transform:none !important }
+  .topbar .toggle{ display:none }
+}

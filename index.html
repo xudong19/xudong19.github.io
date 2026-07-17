@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xu "Joe" Dong · 董旭 — physical AI &amp; robotics</title>
+<meta name="description" content="Xu (Joe) Dong — Founder &amp; CTO of Chestnut Robotics. Physical AI &amp; robotics; led planning models for XPeng's end-to-end driving and Waymo. Physicist by training.">
+<link rel="canonical" href="https://joedong.ai/">
+
+<!-- Open Graph / Twitter (social card is the first impression when shared) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joedong.ai/">
+<meta property="og:site_name" content="joedong.ai">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Xu &quot;Joe&quot; Dong · 董旭">
+<meta property="og:description" content="Founder &amp; CTO of Chestnut Robotics. Real-world AI is won by systems, not models.">
+<meta property="og:image" content="https://joedong.ai/assets/og.png">
+<meta property="og:image:alt" content="Xu (Joe) Dong — Chestnut Robotics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@JoeDong233873">
+<meta name="twitter:creator" content="@JoeDong233873">
+<meta name="twitter:title" content="Xu &quot;Joe&quot; Dong · 董旭">
+<meta name="twitter:description" content="Founder &amp; CTO of Chestnut Robotics. Real-world AI is won by systems, not models.">
+<meta name="twitter:image" content="https://joedong.ai/assets/og.png">
+<meta name="twitter:image:alt" content="Xu (Joe) Dong — Chestnut Robotics">
+
+<!-- No-flash theme init: runs before paint, sets theme + enables JS-only reveal.
+     Failsafe timer guarantees content is never stuck hidden if main.js fails to load/run. -->
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('theme');
+    if(!t){ t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.dataset.theme = t;
+  }catch(e){ document.documentElement.dataset.theme = 'light'; }
+  document.documentElement.classList.add('js');
+  window.__revealTimer = setTimeout(function(){
+    var els = document.querySelectorAll('.reveal');
+    for (var i=0; i<els.length; i++){ els[i].classList.add('in'); }
+  }, 2000);
+})();
+</script>
+
+<!-- Fonts. TODO(launch): self-host these (perf + privacy) instead of the CDN link. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/styles.css">
+
+<!-- Identity graph: resolves "Xu Dong / Joe Dong / 董旭 / X. Dong" to one person for search + confirmation.
+     sameAs holds ONLY the person's own profiles; the company GitHub org lives under worksFor. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Xu Dong",
+  "alternateName": ["Joe Dong", "Xu \"Joe\" Dong", "董旭", "X. Dong"],
+  "jobTitle": "Founder & CTO",
+  "image": "https://joedong.ai/assets/og.png",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Chestnut Robotics",
+    "url": "https://chestnut.bot/",
+    "sameAs": "https://github.com/TetherIA"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Science and Technology of China (USTC)" },
+    { "@type": "CollegeOrUniversity", "name": "Virginia Tech" }
+  ],
+  "url": "https://joedong.ai/",
+  "sameAs": [
+    "https://newsletter.joedong.ai/",
+    "https://substack.com/@joedong42",
+    "https://x.com/JoeDong233873",
+    "https://www.linkedin.com/in/xu-dong/",
+    "https://scholar.google.com/citations?user=Aud0J0YAAAAJ&hl=en",
+    "https://github.com/xudong19"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar wrap">
+  <a class="brand" href="/">joedong<span class="dot">.</span>ai</a>
+  <button id="theme-toggle" class="toggle" type="button" aria-label="dark · light — toggle theme" aria-pressed="false">dark · light</button>
+</header>
+
+<main class="wrap" id="main">
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <div class="hero-text">
+      <h1 class="name">Xu&nbsp;"Joe"&nbsp;Dong <span class="zh" lang="zh-Hans">· 董旭</span></h1>
+      <p class="thesis">Real-world AI is won by systems, not models.</p>
+      <p class="subline">Founder &amp; CTO of <b>Chestnut Robotics</b>, building dexterous robots for the real world. Tech lead for the planning model behind <b>XPeng</b>'s production end-to-end driving; planning foundation models at <b>Waymo</b>. Physicist by training. Author of <i>Physical AI Deep Dives</i>.</p>
+      <!-- CONFIRM before launch: LinkedIn slug /in/xu-dong/ is unverified (v2 had /in/joe-dong/).
+           Same slug is used in 3 places — update together: JSON-LD sameAs above, this hero link, and the footer. -->
+      <nav class="links" aria-label="Primary links">
+        <a href="https://newsletter.joedong.ai/">Newsletter</a><span class="sep" aria-hidden="true">·</span>
+        <a href="https://chestnut.bot/">Chestnut</a><span class="sep" aria-hidden="true">·</span>
+        <a href="https://scholar.google.com/citations?user=Aud0J0YAAAAJ&hl=en">Scholar</a><span class="sep" aria-hidden="true">·</span>
+        <a href="https://github.com/TetherIA">GitHub</a><span class="sep" aria-hidden="true">·</span>
+        <a href="https://x.com/JoeDong233873">X</a><span class="sep" aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/xu-dong/">LinkedIn</a>
+      </nav>
+    </div>
+    <!-- Drop assets/portrait.jpg to fill; until then a clean captioned placeholder shows. -->
+    <figure class="portrait" style="--img:url('assets/portrait.jpg')" role="img" aria-label="Portrait of Joe Dong with the Aero Hand">
+      <figcaption>portrait · Joe + Aero Hand</figcaption>
+    </figure>
+  </section>
+
+  <!-- CREDIBILITY STRIP (CVPR intentionally omitted — papers are CVPR-Workshop; shown honestly in the rows below) -->
+  <section class="strip reveal" aria-label="Affiliations">
+    <span>Waymo</span><span>XPeng</span><span>USTC</span><span>Virginia Tech</span>
+  </section>
+
+  <!-- BUILDING — the center of gravity -->
+  <section class="reveal" id="building" aria-labelledby="building-h">
+    <p class="eyebrow">Building — Chestnut Robotics</p>
+    <h2 id="building-h">The data-driven dexterous hand, and the pipeline that trains it.</h2>
+    <p class="lead">We build the Aero Hand and the data engine behind it — turning human demonstrations into robot skill. Aero&nbsp;Hand (18-DOF, sub-mm) · Aero&nbsp;UMI (data-collection exoskeleton) · GAIN3D (data engine) · a robotic foundation model on top.</p>
+    <div class="fig-row">
+      <figure class="fig fig-lead" style="--img:url('assets/fig-inhand.jpg')"><figcaption>fig · in-hand manipulation, 2026</figcaption></figure>
+      <figure class="fig" style="--img:url('assets/fig-openhand.jpg')"><figcaption>fig · aero-hand-open, open-source $314 hand</figcaption></figure>
+    </div>
+    <p class="work-links">
+      → <a href="https://chestnut.bot/">chestnut.bot</a>
+      → <a href="https://github.com/TetherIA/aero-hand-open">aero-hand-open</a>
+      → <a href="https://chestnut.bot/master-plan.html">the Master Plan</a>
+    </p>
+  </section>
+
+  <!-- SELECTED PUBLICATIONS — prominent, framed as the arc -->
+  <section class="reveal" id="publications" aria-labelledby="pubs-h">
+    <p class="eyebrow">Selected publications — a through-line</p>
+    <h2 id="pubs-h">Physics&nbsp;→&nbsp;medical imaging&nbsp;→&nbsp;autonomous driving&nbsp;→&nbsp;physical AI</h2>
+    <p class="lead">A decade across four fields; the arc is the point. Full list on Google Scholar.</p>
+
+    <article class="pub">
+      <div class="thumb" style="--img:url('assets/pub-radar.jpg')"></div>
+      <div class="pub-body">
+        <h3 class="t">Radar-Camera Fusion via Representation Learning in Autonomous Driving</h3>
+        <p class="a"><b>X. Dong</b>, B. Zhuang, Y. Mao, L. Liu</p>
+        <p class="v"><span class="venue">CVPR-W</span> · 2021 · Autonomous driving</p>
+        <p class="dl"><a href="https://arxiv.org/abs/2103.07825">arXiv</a></p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="thumb" style="--img:url('assets/pub-oriented.jpg')"></div>
+      <div class="pub-body">
+        <h3 class="t">Probabilistic Oriented Object Detection in Automotive Radar</h3>
+        <p class="a"><b>X. Dong</b>, P. Wang, P. Zhang, L. Liu</p>
+        <p class="v"><span class="venue">CVPR-W</span> · 2020 · Autonomous driving</p>
+        <p class="dl"><a href="https://arxiv.org/abs/2004.05310">arXiv</a></p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="thumb" style="--img:url('assets/pub-ct.jpg')"></div>
+      <div class="pub-body">
+        <h3 class="t">A Sparse-View CT Reconstruction Method Based on Combination of DenseNet and Deconvolution</h3>
+        <p class="a">Z. Zhang, X. Liang, <b>X. Dong</b>, Y. Xie, G. Cao</p>
+        <p class="v"><span class="venue">IEEE TMI</span> · 2018 · Medical imaging</p>
+        <p class="dl"><a href="https://doi.org/10.1109/TMI.2018.2823338">DOI</a></p>
+      </div>
+    </article>
+
+    <p class="seeall"><a href="https://scholar.google.com/citations?user=Aud0J0YAAAAJ&hl=en">See all publications on Google Scholar →</a></p>
+  </section>
+
+  <!-- WRITING -->
+  <section class="reveal" id="writing" aria-labelledby="writing-h">
+    <p class="eyebrow">Writing — Physical AI Deep Dives</p>
+    <h2 id="writing-h">I think in public about hard problems in physical AI.</h2>
+    <ul class="essays">
+      <li class="essay"><a class="et" href="https://newsletter.joedong.ai/">System Thinking and Model Thinking in Robot Learning</a><span class="ed">2026 · essay</span></li>
+      <li class="essay"><a class="et" href="https://newsletter.joedong.ai/">The right hand is the one you can capture</a><span class="ed">2026 · essay</span></li>
+      <li class="essay"><a class="et" href="https://newsletter.joedong.ai/">Robot Learning Should Be Goal-Driven and Data-First</a><span class="ed">2026 · essay</span></li>
+    </ul>
+    <blockquote class="quote">The most useful split in robot learning isn't VLA vs. world model — it's system thinking vs. model thinking.</blockquote>
+    <a class="subscribe" href="https://newsletter.joedong.ai/">Subscribe →</a>
+  </section>
+
+  <!-- ABOUT — the arc -->
+  <section class="reveal about" id="about" aria-labelledby="about-h">
+    <p class="eyebrow">About — the arc</p>
+    <h2 id="about-h">An operator who kept the researcher's habits.</h2>
+    <p>I started in physics at USTC, did a PhD building AI for medical imaging, then spent years shipping autonomous driving — first the perception work, then the planning models that actually went to production. Now I build physical AI at Chestnut. The through-line: I like problems where the model is the easy part and the system is the hard part.</p>
+    <p class="labels">
+      <b>Focus</b> — dexterous manipulation, data engines, foundation models for the physical world.<br>
+      <b>Belief</b> — real-world AI is a systems problem before it's a model problem.<br>
+      <b>Now</b> — the Aero Hand, and teaching robots to use it.
+    </p>
+  </section>
+
+</main>
+
+<!-- CONNECT -->
+<footer class="wrap reveal" id="connect">
+  <p class="eyebrow">Connect</p>
+  <nav class="chan" aria-label="Channels">
+    <a href="https://x.com/JoeDong233873">X</a><span class="sep" aria-hidden="true">·</span>
+    <a href="https://www.linkedin.com/in/xu-dong/">LinkedIn</a><span class="sep" aria-hidden="true">·</span>
+    <a href="https://substack.com/@joedong42">Substack</a><span class="sep" aria-hidden="true">·</span>
+    <a href="https://scholar.google.com/citations?user=Aud0J0YAAAAJ&hl=en">Scholar</a><span class="sep" aria-hidden="true">·</span>
+    <a href="https://github.com/TetherIA">GitHub</a><span class="sep" aria-hidden="true">·</span>
+    <a href="assets/joe-dong-cv.pdf">CV</a><span class="sep" aria-hidden="true">·</span>
+    <a href="mailto:dongxu10@gmail.com">Email</a>
+  </nav>
+  <p class="zh-row" lang="zh-Hans">中文 — <a href="https://xhslink.com/m/58WmmtM1gZz">小红书</a> · <a href="https://www.zhihu.com/people/dong-xiao-zhuo-05-05">知乎</a> · <span>公众号 (action_insights)</span></p>
+  <p class="colophon">© <span id="year">2026</span> Xu "Joe" Dong · <span lang="zh-Hans">董旭</span> — formerly TetherIA / <span lang="zh-Hans">绳肌妙算</span> · built in the Barron spirit.</p>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
