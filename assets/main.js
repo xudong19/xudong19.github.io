@@ -30,6 +30,21 @@
   var y = document.getElementById('year');
   if (y) y.textContent = String(new Date().getFullYear());
 
+  // --- Arc figure: refine the to-scale axis so "drawn to scale" is true to the day.
+  // Static CSS fallback values are correct as of deploy; this recomputes boundaries
+  // against today so the indigo segment grows ~1px every few weeks.
+  var ax = document.querySelector('.axis');
+  if (ax) {
+    var now = new Date();
+    var ye = (now - new Date(2010, 0, 1)) / (365.25 * 24 * 3600 * 1000);
+    if (ye > 15.6) { // sanity: never let a bad clock shrink the axis below deploy-time truth
+      ax.style.setProperty('--x14', (4 / ye * 100).toFixed(2) + '%');
+      ax.style.setProperty('--x19', (9 / ye * 100).toFixed(2) + '%');
+      ax.style.setProperty('--x25', (15 / ye * 100).toFixed(2) + '%');
+      ax.title = '2010 → ' + now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + ', drawn to scale';
+    }
+  }
+
   // --- Scroll reveal (skipped under reduced-motion or when IntersectionObserver is absent) ---
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || !('IntersectionObserver' in window)) {
