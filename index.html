@@ -135,9 +135,9 @@
 
   <!-- SELECTED PUBLICATIONS — prominent, framed as the arc -->
   <section class="reveal" id="publications" aria-labelledby="pubs-h">
-    <p class="eyebrow">Selected publications — a through-line</p>
+    <p class="eyebrow">Selected publications</p>
     <h2 id="pubs-h">Physics&nbsp;→&nbsp;medical imaging&nbsp;→&nbsp;autonomous driving&nbsp;→&nbsp;physical AI</h2>
-    <p class="lead">A decade across four fields; the arc is the point. Full list on Google Scholar.</p>
+    <p class="lead">Selected work; the full record is on Google Scholar.</p>
 
     <article class="pub">
       <div class="thumb" style="--img:url('/assets/pub-radar.jpg')"></div>
@@ -187,9 +187,35 @@
 
   <!-- ABOUT — the arc -->
   <section class="reveal about" id="about" aria-labelledby="about-h">
-    <p class="eyebrow">About — the arc</p>
+    <p class="eyebrow">About</p>
     <h2 id="about-h">An operator who kept the researcher's habits.</h2>
-    <p>I started in physics at USTC, did a PhD building AI for medical imaging, then spent years shipping autonomous driving — first the perception work, then the planning models that actually went to production. Now I build physical AI at Chestnut. The through-line: I like problems where the model is the easy part and the system is the hard part.</p>
+    <p>I trained as a physicist (USTC, 2010–14), then spent a PhD putting deep learning into medical imaging (Virginia Tech, 2014–19), back when AI-for-X still needed an argument. From 2019 to 2025 I built autonomous driving through three of the field's paradigm shifts — monocular 3D detection, learning-based planning, then end-to-end foundation models, the last shipped to production at XPeng. In 2025 I founded Chestnut Robotics to do it again in the field AI is cracking open now: robots. Every few years the substrate changes; the method — systems first, models second — doesn't.</p>
+
+    <!-- the arc, as documentation: static to-scale timeline; JS refines the endpoint to today (see main.js) -->
+    <figure class="arcwrap" role="img" aria-label="Timeline, drawn to scale: physics at USTC 2010 to 2014; medical-imaging AI PhD 2014 to 2019; autonomous driving 2019 to 2025 through three waves — mono-3D detection, planning, end-to-end; physical AI at Chestnut Robotics, 2025 to present.">
+      <div class="arcfig" aria-hidden="true">
+        <div class="axis" title="2010 → present, drawn to scale">
+          <span class="flabel l1">physics</span>
+          <span class="flabel l2">medical imaging</span>
+          <span class="flabel l3">autonomous driving</span>
+          <span class="flabel l4">physical ai</span>
+          <div class="seg s1"></div><div class="seg s2"></div><div class="seg s3"></div><div class="seg s4"></div>
+          <div class="tick k1"></div><div class="tick k2"></div><div class="tick k3"></div><div class="tick k4"></div>
+          <div class="tick minor m1"></div><div class="tick minor m2"></div>
+          <div class="node origin"></div><div class="node current"></div>
+          <span class="year y1">2010</span><span class="year y2">2014</span><span class="year y3">2019</span><span class="year y4">2025</span>
+          <div class="waves">mono-3D · planning · end-to-end</div>
+        </div>
+      </div>
+      <div class="ledger" aria-hidden="true">
+        <div><span class="yr">2010–14</span>physics · USTC</div>
+        <div><span class="yr">2014–19</span>medical imaging · PhD</div>
+        <div><span class="yr">2019–25</span>autonomous driving</div>
+        <div class="sub">mono-3D · planning · end-to-end</div>
+        <div class="cur"><span class="yr">2025–</span>physical ai · Chestnut</div>
+      </div>
+      <figcaption class="figcap">fig · fields, 2010 → present · drawn to scale</figcaption>
+    </figure>
     <p class="labels">
       <b>Focus</b> — dexterous manipulation, data engines, foundation models for the physical world.<br>
       <b>Belief</b> — real-world AI is a systems problem before it's a model problem.<br>
