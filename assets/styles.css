@@ -115,6 +115,40 @@ h2{ font-family:var(--serif); font-weight:500; font-size:26px; line-height:1.15;
 .about .labels{ font-family:var(--mono); font-size:13px; color:var(--muted); line-height:1.8 }
 .about .labels b{ color:var(--accent); font-weight:500 }
 
+/* the arc figure — static to-scale career timeline (About). Boundary positions are CSS vars;
+   static values are correct as of deploy; main.js refines the axis end to today. */
+.arcwrap{ margin:22px 0 0 }
+.arcfig{ border:1px solid var(--hair); border-radius:3px; background:var(--figbg); padding:26px 22px 14px }
+.axis{ --x14:24.15%; --x19:54.35%; --x25:90.58%; position:relative; height:78px }
+.seg{ position:absolute; top:38px; height:2px; background:var(--hair) }
+.seg.s1{ left:0; width:var(--x14) }
+.seg.s2{ left:var(--x14); width:calc(var(--x19) - var(--x14)) }
+.seg.s3{ left:var(--x19); width:calc(var(--x25) - var(--x19)) }
+.seg.s4{ left:var(--x25); width:calc(100% - var(--x25)); top:37.75px; height:2.5px;
+         background:linear-gradient(90deg, var(--accent) 0%, var(--accent) 55%, transparent 100%) }
+.tick{ position:absolute; top:34px; width:1px; height:10px; background:var(--muted); opacity:.7 }
+.tick.k1{ left:0 } .tick.k2{ left:var(--x14) } .tick.k3{ left:var(--x19) } .tick.k4{ left:var(--x25) }
+.tick.minor{ top:36px; height:6px; opacity:.35 }
+.tick.m1{ left:calc(var(--x19) + (var(--x25) - var(--x19))/3) }
+.tick.m2{ left:calc(var(--x19) + (var(--x25) - var(--x19))*2/3) }
+.node{ position:absolute; top:35.5px; width:7px; height:7px; border-radius:50% }
+.node.origin{ left:-3px; border:1.5px solid var(--muted); background:var(--figbg) }
+.node.current{ left:calc(var(--x25) - 3px); background:var(--accent) }
+.flabel{ position:absolute; top:8px; font-family:var(--mono); font-size:11px; letter-spacing:.02em; color:var(--ink); white-space:nowrap }
+.flabel.l1{ left:0 } .flabel.l2{ left:var(--x14) } .flabel.l3{ left:var(--x19) }
+.flabel.l4{ right:0; color:var(--accent) }
+.year{ position:absolute; top:50px; font-family:var(--mono); font-size:11px; color:var(--muted) }
+.year.y1{ left:0 } .year.y2{ left:var(--x14) } .year.y3{ left:var(--x19) } .year.y4{ left:var(--x25) }
+.waves{ position:absolute; top:64px; left:var(--x19); width:calc(var(--x25) - var(--x19)); text-align:center;
+        font-family:var(--mono); font-size:10.5px; color:var(--muted); opacity:.75; white-space:nowrap }
+.ledger{ display:none; border:1px solid var(--hair); border-radius:3px; background:var(--figbg);
+         padding:16px 18px; font-family:var(--mono); font-size:12px; line-height:2; color:var(--ink) }
+.ledger .yr{ color:var(--muted); display:inline-block; width:84px }
+.ledger .sub{ color:var(--muted); opacity:.75; padding-left:84px; font-size:11px; line-height:1.6 }
+.ledger .cur, .ledger .cur .yr{ color:var(--accent) }
+.arcwrap .figcap{ position:static; background:none; padding:0; margin-top:8px; font-family:var(--mono); font-size:10.5px; color:var(--muted) }
+@media (max-width:560px){ .arcfig{ display:none } .ledger{ display:block } }
+
 /* footer */
 footer{ padding:34px 28px 56px }
 .chan{ font-family:var(--mono); font-size:13px; display:flex; flex-wrap:wrap; align-items:center }
