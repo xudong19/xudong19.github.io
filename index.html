@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Xu "Joe" Dong · 董旭 — physical AI &amp; robotics</title>
-<meta name="description" content="Xu (Joe) Dong — Founder &amp; CTO of Chestnut Robotics. Physical AI &amp; robotics; led planning models for XPeng's end-to-end driving and Waymo. Physicist by training.">
+<meta name="description" content="Xu (Joe) Dong — Founder &amp; CTO of Chestnut Robotics. Computer vision → autonomous driving → physical AI; led the planning model behind XPeng's production end-to-end driving.">
 <link rel="canonical" href="https://joedong.ai/">
 
 <!-- Open Graph / Twitter (social card is the first impression when shared) -->
@@ -61,6 +61,7 @@
   "worksFor": {
     "@type": "Organization",
     "name": "Chestnut Robotics",
+    "alternateName": "TetherIA",
     "url": "https://chestnut.bot/",
     "sameAs": "https://github.com/TetherIA"
   },
@@ -94,7 +95,7 @@
     <div class="hero-text">
       <h1 class="name">Xu&nbsp;"Joe"&nbsp;Dong <span class="zh" lang="zh-Hans">· 董旭</span></h1>
       <p class="thesis">Real-world AI is won by systems, not models.</p>
-      <p class="subline">Founder &amp; CTO of <b>Chestnut Robotics</b>, building dexterous robots for the real world. Tech lead for the planning model behind <b>XPeng</b>'s production end-to-end driving; planning foundation models at <b>Waymo</b>. Physicist by training. Author of <a href="https://newsletter.joedong.ai/"><i>Physical AI Deep Dives</i></a>.</p>
+      <p class="subline">Founder &amp; CTO of <b>Chestnut Robotics</b> (previously TetherIA), building dexterous robots for the real world. Tech lead for the planning model behind <b>XPeng</b>'s production end-to-end driving; planning foundation models at <b>Waymo</b>. Physicist by training, computer vision by trade. Author of <a href="https://newsletter.joedong.ai/"><i>Physical AI Deep Dives</i></a>.</p>
       <nav class="links" aria-label="Primary links">
         <a href="https://newsletter.joedong.ai/">Newsletter</a><span class="sep" aria-hidden="true">·</span>
         <a href="https://chestnut.bot/">Chestnut</a><span class="sep" aria-hidden="true">·</span>
@@ -117,7 +118,7 @@
   <section class="reveal" id="building" aria-labelledby="building-h">
     <p class="eyebrow">Building — Chestnut Robotics</p>
     <h2 id="building-h">The data-driven dexterous hand, and the pipeline that trains it.</h2>
-    <p class="lead">We build the Aero Hand and the data engine behind it — turning human demonstrations into robot skill. Aero&nbsp;Hand (18-DOF, sub-mm) · Aero&nbsp;UMI (data-collection exoskeleton) · GAIN3D (data engine) · a robotic foundation model on top.</p>
+    <p class="lead">We build the Aero Hand and the data engine behind it — egocentric, high-fidelity capture that turns human demonstrations into robot skill. Aero&nbsp;Hand (18-DOF, sub-mm) · Aero&nbsp;UMI (capture exoskeleton) · GAIN3D (3D reconstruction) · a robotic foundation model on top.</p>
     <div class="fig-row">
       <a class="fig-link" href="https://drive.google.com/file/d/1vf9rkU7hY95ZcZi4fiMl6HkVROQ-NYio/view" aria-label="Watch: in-hand manipulation demo capture (video)">
         <figure class="fig fig-lead" style="--img:url('/assets/fig-inhand.jpg')"><figcaption>fig · in-hand demo capture — 3D scene + hand trajectory · video →</figcaption></figure>
@@ -136,8 +137,8 @@
   <!-- SELECTED PUBLICATIONS — prominent, framed as the arc -->
   <section class="reveal" id="publications" aria-labelledby="pubs-h">
     <p class="eyebrow">Selected publications</p>
-    <h2 id="pubs-h">Physics&nbsp;→&nbsp;medical imaging&nbsp;→&nbsp;autonomous driving&nbsp;→&nbsp;physical AI</h2>
-    <p class="lead">Selected work; the full record is on Google Scholar.</p>
+    <h2 id="pubs-h">Physics&nbsp;→&nbsp;computer vision&nbsp;→&nbsp;autonomous driving&nbsp;→&nbsp;physical AI</h2>
+    <p class="lead">Selected work, from medical-image reconstruction to radar-camera perception; the full record is on Google Scholar.</p>
 
     <article class="pub">
       <div class="thumb" style="--img:url('/assets/pub-radar.jpg')"></div>
@@ -189,14 +190,14 @@
   <section class="reveal about" id="about" aria-labelledby="about-h">
     <p class="eyebrow">About</p>
     <h2 id="about-h">A researcher who builds in production.</h2>
-    <p>I trained as a physicist (USTC, 2010–14), then moved into computer vision for my PhD, working on medical image analysis (Virginia Tech, 2014–19). From 2019 to 2025 I carried it into autonomous driving through three of the field's paradigm shifts — monocular 3D detection, learning-based planning, then end-to-end foundation models, the last shipped to production at XPeng. In 2025 I cofounded Chestnut Robotics to do the same for robots. Every move has followed one read — a field AI had just cracked open.</p>
+    <p>I trained as a physicist (USTC, 2010–14), then moved into computer vision for my PhD, working on medical image analysis (Virginia Tech, 2014–19). From 2019 to 2025 I carried vision into autonomous driving through three of the field's paradigm shifts — monocular 3D detection, learning-based planning, then end-to-end foundation models, the last shipped to production at XPeng. In 2025 I cofounded Chestnut Robotics to do the same for robots. Every move has followed one read — a field AI had just cracked open.</p>
 
     <!-- the arc, as documentation: static to-scale timeline; JS refines the endpoint to today (see main.js) -->
     <figure class="arcwrap" role="img" aria-label="Timeline, drawn to scale: physics at USTC 2010 to 2014; computer-vision PhD in medical image analysis, 2014 to 2019; autonomous driving 2019 to 2025 through three waves — mono-3D detection, planning, end-to-end; physical AI at Chestnut Robotics, 2025 to present.">
       <div class="arcfig" aria-hidden="true">
         <div class="axis" title="2010 → present, drawn to scale">
           <span class="flabel l1">physics</span>
-          <span class="flabel l2">medical imaging</span>
+          <span class="flabel l2">computer vision</span>
           <span class="flabel l3">autonomous driving</span>
           <span class="flabel l4">physical ai</span>
           <div class="seg s1"></div><div class="seg s2"></div><div class="seg s3"></div><div class="seg s4"></div>
@@ -209,7 +210,7 @@
       </div>
       <div class="ledger" aria-hidden="true">
         <div><span class="yr">2010–14</span>physics · USTC</div>
-        <div><span class="yr">2014–19</span>medical imaging · PhD</div>
+        <div><span class="yr">2014–19</span>computer vision · PhD</div>
         <div><span class="yr">2019–25</span>autonomous driving</div>
         <div class="sub">mono-3D · planning · end-to-end</div>
         <div class="cur"><span class="yr">2025–</span>physical ai · Chestnut</div>
