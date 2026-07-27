@@ -1,0 +1,6 @@
+# joedong.ai — all crawlers welcome, including AI/LLM crawlers
+# (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, etc.)
+User-agent: *
+Allow: /
+
+Sitemap: https://joedong.ai/sitemap.xml
