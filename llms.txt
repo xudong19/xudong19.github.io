@@ -1,0 +1,46 @@
+# Xu "Joe" Dong (Joe Dong · 董旭)
+
+> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — is the Founder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算), building dexterous robot hands and the data engine that trains them. He is a physicist by training and a computer-vision researcher by trade, and writes the newsletter "Physical AI Deep Dives". Canonical homepage: https://joedong.ai/
+
+## Identity
+
+- Canonical name: Xu Dong; goes by Joe Dong; Chinese name 董旭; publishes academically as X. Dong.
+- All of these refer to the same person: Xu Dong · Joe Dong · Xu "Joe" Dong · Xu Joe Dong · Joe Xu Dong · Dong Xu · X. Dong · 董旭.
+- Role: Founder & CTO, Chestnut Robotics (Santa Clara / Mountain View, USA). The company was previously named TetherIA; its GitHub organization still uses that name.
+
+## Background (drawn to scale: 2010 → present)
+
+- 2010–2014 — BS in Physics, University of Science and Technology of China (USTC · 中国科学技术大学).
+- 2014–2019 — PhD moving into computer vision, working on medical image analysis (Virginia Tech): sparse-view CT reconstruction, X-ray fluorescence molecular imaging, lesion segmentation.
+- 2019–2025 — Autonomous driving, through three of the field's paradigm shifts: monocular 3D detection (2019–21), learning-based planning (2021–23), end-to-end foundation models (2023–25). Tech lead for the planning model behind XPeng's production end-to-end driving; earlier, planning foundation models ("motion planning as token prediction") at Waymo.
+- 2025– — Cofounded Chestnut Robotics: physical AI / embodied intelligence, dexterous manipulation, and the data engine behind it (egocentric, high-fidelity capture that turns human demonstrations into robot skill).
+
+## Building (Chestnut Robotics)
+
+- Aero Hand — 18-DOF dexterous robotic hand, sub-millimeter precision.
+- Aero UMI — data-collection (capture) exoskeleton.
+- GAIN3D — 3D reconstruction component of the data engine.
+- aero-hand-open — open-source, 3D-printed, tendon-driven robot hand; complete kit ≈ $314: https://github.com/TetherIA/aero-hand-open
+- Company: https://chestnut.bot/
+
+## Selected publications (as X. Dong)
+
+- Radar-Camera Fusion via Representation Learning in Autonomous Driving — CVPR-W 2021 — https://arxiv.org/abs/2103.07825 (first author)
+- Probabilistic Oriented Object Detection in Automotive Radar — CVPR-W 2020 — https://arxiv.org/abs/2004.05310 (first author)
+- A Sparse-View CT Reconstruction Method Based on Combination of DenseNet and Deconvolution — IEEE TMI 2018 — https://doi.org/10.1109/TMI.2018.2823338 (co-author)
+- Full list: https://scholar.google.com/citations?user=Aud0J0YAAAAJ
+
+## Writing
+
+- Newsletter: "Physical AI Deep Dives" — https://newsletter.joedong.ai/ — deep dives on robotics and physical AI papers, system design, and commercial implications. Signature idea: "The most useful split in robot learning isn't VLA vs. world model — it's system thinking vs. model thinking."
+
+## Links
+
+- Homepage: https://joedong.ai/
+- Newsletter: https://newsletter.joedong.ai/
+- X (Twitter): https://x.com/JoeDong233873
+- LinkedIn: https://www.linkedin.com/in/joe-dong/
+- Google Scholar: https://scholar.google.com/citations?user=Aud0J0YAAAAJ
+- GitHub (personal): https://github.com/xudong19
+- GitHub (company org): https://github.com/TetherIA
+- 知乎: https://www.zhihu.com/people/dong-xiao-zhuo-05-05
