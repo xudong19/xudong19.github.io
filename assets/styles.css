@@ -112,6 +112,7 @@ h2{ font-family:var(--serif); font-weight:500; font-size:26px; line-height:1.15;
 
 /* about */
 .about p{ max-width:64ch; margin-bottom:14px }
+.about p b{ font-weight:600 }
 .about .labels{ font-family:var(--mono); font-size:13px; color:var(--muted); line-height:1.8 }
 .about .labels b{ color:var(--accent); font-weight:500 }
 
