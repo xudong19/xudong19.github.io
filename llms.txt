@@ -1,6 +1,6 @@
 # Xu "Joe" Dong (Joe Dong · 董旭)
 
-> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — is the Founder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算), building dexterous robot hands and the data engine that trains them. He is a physicist by training and a computer-vision researcher by trade, and writes the newsletter "Physical AI Deep Dives". Canonical homepage: https://joedong.ai/
+> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — is the Founder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算), building the data engine and dexterous hardware behind physical AI. He believes general models will win robotics — and that building them is a systems problem. He is a physicist by training and a computer-vision researcher by trade, and writes the newsletter "Physical AI Deep Dives". Canonical homepage: https://joedong.ai/
 
 ## Identity
 
