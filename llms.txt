@@ -27,6 +27,7 @@
 
 - Radar-Camera Fusion via Representation Learning in Autonomous Driving — CVPR-W 2021 — https://arxiv.org/abs/2103.07825 (first author)
 - Probabilistic Oriented Object Detection in Automotive Radar — CVPR-W 2020 — https://arxiv.org/abs/2004.05310 (first author)
+- Sinogram Interpolation for Sparse-View Micro-CT with Deep Learning Neural Network — arXiv 2019 — https://arxiv.org/abs/1902.03362 (first author)
 - A Sparse-View CT Reconstruction Method Based on Combination of DenseNet and Deconvolution — IEEE TMI 2018 — https://doi.org/10.1109/TMI.2018.2823338 (co-author)
 - Full list: https://scholar.google.com/citations?user=Aud0J0YAAAAJ
 
