@@ -49,7 +49,14 @@ h1,h2,h3,p,ul,figure,blockquote{ margin:0 }
 .thesis{ font-family:var(--serif); font-style:italic; font-weight:400; font-size:23px; line-height:1.3; color:var(--muted); margin:8px 0 14px }
 .subline{ font-size:16px; color:var(--muted); max-width:54ch; margin-bottom:18px }
 .subline b{ color:var(--ink); font-weight:600 }
-.links{ font-family:var(--mono); font-size:13px; line-height:1.4 }
+/* prose links in the bio stay ink with a soft underline — three accent links in six lines is too loud */
+.subline a{ color:var(--ink); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
+            text-decoration-color:color-mix(in srgb, var(--muted) 45%, transparent) }
+.subline a:hover{ color:var(--accent); text-decoration-color:var(--accent) }
+/* profile + blog rows: label column echoes the About ledger ("Focus —", "Belief —") */
+.links{ font-family:var(--mono); font-size:13px; line-height:1.4; display:grid; grid-template-columns:max-content 1fr; column-gap:16px; align-items:baseline }
+.links .lbl{ font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); padding:7px 0 }
+.links .row{ display:flex; flex-wrap:wrap; align-items:center }
 .links a{ color:var(--ink); padding:7px 0; display:inline-block }   /* taller hit target */
 .links .sep{ color:var(--hair); margin:0 6px }
 
