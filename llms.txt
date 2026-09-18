@@ -1,6 +1,6 @@
 # Xu "Joe" Dong (Joe Dong · 董旭)
 
-> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — is the Cofounder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算), building the data engine and dexterous hardware behind physical AI. He believes general models will win robotics — and that building them is a systems problem. He is a physicist by training and a computer-vision researcher by trade. He loves thinking, writing, and blogging: he writes the newsletter "Physical AI Deep Dives" in English and blogs in Chinese on 知乎 (Zhihu) and 小红书 (Xiaohongshu). Canonical homepage: https://joedong.ai/
+> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — builds the infrastructure physical AI runs on: data, evaluation, hardware, simulation, and a platform that scales. He is the Cofounder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算). He believes general models will win robotics — and that building them is a systems problem. He is a physicist by training and a computer-vision researcher by trade. He loves thinking, writing, and blogging: he writes the newsletter "Physical AI Deep Dives" in English and blogs in Chinese on 知乎 (Zhihu) and 小红书 (Xiaohongshu). Canonical homepage: https://joedong.ai/
 
 ## Identity
 
@@ -22,6 +22,8 @@
 - GAIN3D — 3D reconstruction component of the data engine.
 - aero-hand-open — open-source, 3D-printed, tendon-driven robot hand; complete kit ≈ $314: https://github.com/Chestnut-Robotics/aero-hand-open
 - Company: https://chestnut.bot/
+- Focus: dexterous manipulation; physical-AI infrastructure — data, evaluation, hardware, simulation, a platform that scales.
+- Method: system thinking over model thinking; goal-driven, data-first.
 
 ## Selected publications (as X. Dong)
 
