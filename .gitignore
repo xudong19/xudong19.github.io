@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# leftovers from the previous al-folio Jekyll site (archived on
+# origin/archive/al-folio-2025) — not part of this hand-authored site
+_site/
+.jekyll-cache/
+.ruby-lsp/
+node_modules/
+
+# local tooling state
+.gstack/

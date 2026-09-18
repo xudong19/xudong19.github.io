@@ -1,12 +1,12 @@
 # Xu "Joe" Dong (Joe Dong · 董旭)
 
-> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — is the Founder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算), building the data engine and dexterous hardware behind physical AI. He believes general models will win robotics — and that building them is a systems problem. He is a physicist by training and a computer-vision researcher by trade, and writes the newsletter "Physical AI Deep Dives". Canonical homepage: https://joedong.ai/
+> Xu "Joe" Dong — also written Joe Dong, Xu Joe Dong, Joe Xu Dong, Dong Xu, X. Dong, or 董旭 — is the Cofounder & CTO of Chestnut Robotics (previously TetherIA; Chinese name 绳肌妙算), building the data engine and dexterous hardware behind physical AI. He believes general models will win robotics — and that building them is a systems problem. He is a physicist by training and a computer-vision researcher by trade, and writes the newsletter "Physical AI Deep Dives". Canonical homepage: https://joedong.ai/
 
 ## Identity
 
 - Canonical name: Xu Dong; goes by Joe Dong; Chinese name 董旭; publishes academically as X. Dong.
 - All of these refer to the same person: Xu Dong · Joe Dong · Xu "Joe" Dong · Xu Joe Dong · Joe Xu Dong · Dong Xu · X. Dong · 董旭.
-- Role: Founder & CTO, Chestnut Robotics (Santa Clara / Mountain View, USA). The company was previously named TetherIA; its GitHub organization still uses that name.
+- Role: Cofounder & CTO, Chestnut Robotics (Santa Clara / Mountain View, USA). The company was previously named TetherIA; its GitHub organization is now https://github.com/Chestnut-Robotics.
 
 ## Background (drawn to scale: 2010 → present)
 
@@ -20,11 +20,12 @@
 - Aero Hand — 18-DOF dexterous robotic hand, sub-millimeter precision.
 - Aero UMI — data-collection (capture) exoskeleton.
 - GAIN3D — 3D reconstruction component of the data engine.
-- aero-hand-open — open-source, 3D-printed, tendon-driven robot hand; complete kit ≈ $314: https://github.com/TetherIA/aero-hand-open
+- aero-hand-open — open-source, 3D-printed, tendon-driven robot hand; complete kit ≈ $314: https://github.com/Chestnut-Robotics/aero-hand-open
 - Company: https://chestnut.bot/
 
 ## Selected publications (as X. Dong)
 
+- Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning — arXiv 2026, submitted to ICRA — https://arxiv.org/abs/2608.28578 (co-author and corresponding author for software; project page: https://chestnut-robotics.github.io/aero-hand-open/)
 - Radar-Camera Fusion via Representation Learning in Autonomous Driving — CVPR-W 2021 — https://doi.org/10.1109/CVPRW53098.2021.00183 (first author; arXiv: https://arxiv.org/abs/2103.07825)
 - Probabilistic Oriented Object Detection in Automotive Radar — CVPR-W 2020 — https://doi.org/10.1109/CVPRW50498.2020.00059 (first author; arXiv: https://arxiv.org/abs/2004.05310)
 - Sinogram Interpolation for Sparse-View Micro-CT with Deep Learning Neural Network — SPIE Medical Imaging 2019 — https://doi.org/10.1117/12.2512979 (first author; arXiv: https://arxiv.org/abs/1902.03362)
@@ -43,5 +44,7 @@
 - LinkedIn: https://www.linkedin.com/in/joe-dong/
 - Google Scholar: https://scholar.google.com/citations?user=Aud0J0YAAAAJ
 - GitHub (personal): https://github.com/xudong19
-- GitHub (company org): https://github.com/TetherIA
+- GitHub (company org): https://github.com/Chestnut-Robotics
 - 知乎: https://www.zhihu.com/people/dong-xiao-zhuo-05-05
+- 小红书 (Xiaohongshu / RED): https://xhslink.com/m/58WmmtM1gZz
+- 公众号 (WeChat official account): action_insights

@@ -154,9 +154,8 @@ h2{ font-family:var(--serif); font-weight:500; font-size:26px; line-height:1.15;
 footer{ padding:34px 28px 56px }
 .chan{ font-family:var(--mono); font-size:13px; display:flex; flex-wrap:wrap; align-items:center }
 .chan a{ color:var(--ink); padding:7px 0; display:inline-block }
-.chan .sep{ color:var(--hair); margin:0 9px }
-.zh-row{ font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:8px }
-.zh-row a{ color:var(--muted) }
+.chan .sep{ color:var(--hair); margin:0 7px }
+.chan .nolink{ color:var(--muted); padding:7px 0; display:inline-block }
 .colophon{ font-family:var(--mono); font-size:11px; color:var(--muted); margin-top:22px }
 
 /* reveal on scroll — progressive enhancement only (content is visible without JS) */
